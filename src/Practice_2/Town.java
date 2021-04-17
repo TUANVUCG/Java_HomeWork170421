@@ -35,9 +35,9 @@ public class Town {
     }
 
     // Hien thi thong tin ve cac ho co nguoi 80 tuoi
-    public void showInfo80() {
+    public void showInfoByAge(int age) {
         boolean k = false;
-        int homeNumber = findHomeNum(80);
+        int homeNumber = findHomeNum(age);
         for (Family family1 : families) {
             if (family1.getHomeNum() == homeNumber) {
                 System.out.println(family1.toString()); // hien thi thong tin cua nhung nguoi cung so nha voi nguoi 80 tuoi

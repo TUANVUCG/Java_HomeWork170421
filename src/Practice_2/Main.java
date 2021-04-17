@@ -22,7 +22,9 @@ public class Main {
                     break;
                 }
                 case 3: {
-                    town.showInfo80();
+                    System.out.println("Nhập tuổi muốn kiểm tra thông tin");
+                    int age = sc.nextInt();
+                    town.showInfoByAge(age);
                     break;
                 }
             }
@@ -33,7 +35,7 @@ public class Main {
         System.out.println("Nhập lựa chọn của bạn");
         System.out.println("1. Nhập thông tin cá nhân.");
         System.out.println("2. Hiển thị thông tin cá nhân.");
-        System.out.println("3. Hiển thị thông tin về các hộ có người mừng thọ.");
+        System.out.println("3. Hiển thị thông tin gia đình bằng cách nhập tuổi.");
         System.out.println("0. Thoát.");
         System.out.println("---------------");
     }
