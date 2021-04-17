@@ -8,11 +8,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int choice;
         do {
-            System.out.println("Nhập lựa chọn của bạn");
-            System.out.println("1. Nhập thông tin cá nhân.");
-            System.out.println("2. Hiển thị thông tin cá nhân.");
-            System.out.println("3. Hiển thị thông tin về các hộ có người mừng thọ.");
-            System.out.println("0. Thoát.");
+            menu();
             choice = sc.nextInt();
             switch (choice){
                 case 1 : {
@@ -31,5 +27,13 @@ public class Main {
                 }
             }
         } while (choice != 0);
+    }
+
+    private static void menu() {
+        System.out.println("Nhập lựa chọn của bạn");
+        System.out.println("1. Nhập thông tin cá nhân.");
+        System.out.println("2. Hiển thị thông tin cá nhân.");
+        System.out.println("3. Hiển thị thông tin về các hộ có người mừng thọ.");
+        System.out.println("0. Thoát.");
     }
 }
