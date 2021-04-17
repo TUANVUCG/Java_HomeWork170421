@@ -35,5 +35,6 @@ public class Main {
         System.out.println("2. Hiển thị thông tin cá nhân.");
         System.out.println("3. Hiển thị thông tin về các hộ có người mừng thọ.");
         System.out.println("0. Thoát.");
+        System.out.println("---------------");
     }
 }

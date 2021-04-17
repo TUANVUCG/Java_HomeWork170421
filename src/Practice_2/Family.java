@@ -10,36 +10,15 @@ public class Family extends Person{
     public Family() {
     }
 
-    public Family(int amountOfPeople, int homeNum, Person person) {
-        this.amountOfPeople = amountOfPeople;
-        this.homeNum = homeNum;
-        this.person = person;
-    }
 
-    public int getAmountOfPeople() {
-        return amountOfPeople;
-    }
-
-    public void setAmountOfPeople(int amountOfPeople) {
-        this.amountOfPeople = amountOfPeople;
-    }
 
     public int getHomeNum() {
         return homeNum;
     }
 
-    public void setHomeNum(int homeNum) {
-        this.homeNum = homeNum;
-    }
-
     public Person getPerson() {
         return person;
     }
-
-    public void setPerson(Person person) {
-        this.person = person;
-    }
-
 
     public void inputFamilyInfo(){
         person.inputPersonInfo();
@@ -53,7 +32,7 @@ public class Family extends Person{
 
     @Override
     public String toString() {
-        return  person.toString()+ "Số người : " + amountOfPeople +
+        return  person.toString()+ "Số người : " + amountOfPeople +"     "+
                 "Số nhà : " + homeNum;
 
     }
