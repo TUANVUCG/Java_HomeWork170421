@@ -19,12 +19,12 @@ public class Town {
         }
     }
 
-    // Tim so nha theo tuoi 80
-    public int findHomeNum() {
+    // Tim so nha theo tuoi
+    public int findHomeNum(int age) {
         int homeNumber = 0;
         boolean k = false;
         for (Family family : families) {
-            if (family.getPerson().getAge() == 80) {
+            if (family.getPerson().getAge() == age) {
                 homeNumber = family.getHomeNum();
                 k = true;
             }
@@ -37,7 +37,7 @@ public class Town {
     // Hien thi thong tin ve cac ho co nguoi 80 tuoi
     public void showInfo80() {
         boolean k = false;
-        int homeNumber = findHomeNum();
+        int homeNumber = findHomeNum(80);
         for (Family family1 : families) {
             if (family1.getHomeNum() == homeNumber) {
                 System.out.println(family1.toString()); // hien thi thong tin cua nhung nguoi cung so nha voi nguoi 80 tuoi
