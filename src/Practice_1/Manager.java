@@ -6,8 +6,7 @@ import java.util.Scanner;
 
 public class Manager {
     List<BorrowCard> borrowCardList = new ArrayList<>();
-    Student student = new Student();
-    Scanner sc = new Scanner(System.in);
+
     // Nhap thong tin sinh vien va The muon
     public void addBorrowCard(BorrowCard borrowCard) {
         borrowCardList.add(borrowCard);
