@@ -18,13 +18,13 @@ public class Main {
                     break;
                 }
                 case 2 : {
-                    town.showInfoPerson();
+                    town.showFamilyInfo();
                     break;
                 }
                 case 3: {
                     System.out.println("Nhập tuổi muốn kiểm tra thông tin");
-                    int age = sc.nextInt();
-                    town.showInfoByAge(age);
+                    int age = Integer.parseInt(sc.nextLine());
+                    town.showInfoByAge(age);       // Loi chua chay duoc
                     break;
                 }
             }
@@ -33,8 +33,8 @@ public class Main {
 
     private static void menu() {
         System.out.println("Nhập lựa chọn của bạn");
-        System.out.println("1. Nhập thông tin cá nhân.");
-        System.out.println("2. Hiển thị thông tin cá nhân.");
+        System.out.println("1. Nhập thông tin gia đình.");
+        System.out.println("2. Hiển thị thông tin gia đình.");
         System.out.println("3. Hiển thị thông tin gia đình bằng cách nhập tuổi.");
         System.out.println("0. Thoát.");
         System.out.println("---------------");
