@@ -23,7 +23,7 @@ public class Main {
                 }
                 case 3: {
                     System.out.println("Nhập tuổi muốn kiểm tra thông tin");
-                    int age = Integer.parseInt(sc.nextLine());
+                    int age = sc.nextInt();
                     town.showInfoByAge(age);       // Loi chua chay duoc
                     break;
                 }
